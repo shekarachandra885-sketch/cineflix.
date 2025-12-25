@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MovieFlix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎬 cineFlix.</h1>
+</header>
+
+<div class="movies">
+  <div class="movie" onclick="playMovie('https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4')">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Night_of_the_Living_Dead_%281968%29_poster.jpg">
+    <p>Night of the Living Dead</p>
+  </div>
+
+  <div class="movie" onclick="playMovie('https://archive.org/download/charlie_chaplin_the_kid/the_kid_512kb.mp4')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Kid_1921_poster.jpg">
+    <p>The Kid</p>
+  </div>
+</div>
+
+<div id="player">
+  <video id="video" controls></video>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
